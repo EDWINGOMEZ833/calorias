@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Escalada</title>
+</head>
+<body>
+    <h1>Selecciona los elementos para escalar el risco</h1>
+
+    
+    <div class="container">
+        <div class="items">
+            <label><input type="checkbox" name="element" value="E1"> E1 (Peso: 5, Calorías: 3)</label>
+            <label><input type="checkbox" name="element" value="E2"> E2 (Peso: 3, Calorías: 5)</label>
+            <label><input type="checkbox" name="element" value="E3"> E3 (Peso: 5, Calorías: 2)</label>
+            <label><input type="checkbox" name="element" value="E4"> E4 (Peso: 1, Calorías: 8)</label>
+            <label><input type="checkbox" name="element" value="E5"> E5 (Peso: 2, Calorías: 3)</label>
+        </div>
+        <!-- Resultados y validación -->
+        <div class="results">
+            <!-- aqui se muestra el total de pesos ,ademas esta inicializado en 0 lo mismo para las calorias  -->
+            <p>Total Peso: <span id="totalPeso">0</span></p> 
+            <p>Total Calorías: <span id="totalCalorias">0</span></p>
+            <p id="validationMessage"></p>
+        </div>
+    </div>
+    <!-- este button me proporcionara el resultado de los elementos para su validacion-->
+    <button onclick="calculaElementos()">Calcular Elementos Óptimos</button>
+    <script src="script.js"></script>
+</body>
+</html>
